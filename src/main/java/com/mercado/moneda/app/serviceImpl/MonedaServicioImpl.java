@@ -33,8 +33,6 @@ public class MonedaServicioImpl implements MonedaService {
     Moneda moneda = repo.findByDate(dateNow);
     repo.delete(moneda);
     repo.save(result.getBody());
-    
-    System.out.println("data " + result.getBody());
   }
 
 }
